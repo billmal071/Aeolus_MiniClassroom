@@ -1,0 +1,70 @@
+.box-1 {
+    background-image: url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.box-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.box-2 {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.text-1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 567px) {
+    .butn {
+        display: flex;
+        flex-direction: column;
+    }
+    .margin-1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 567px) {
+    .margin-1 {
+        margin-right: 16px;
+    }
+    .margin-2 {
+        margin-left: 16px;
+    }
+}
+
+.button {
+    background-color: floralwhite;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px grey;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.button a:hover {
+    text-decoration: none;
+}
